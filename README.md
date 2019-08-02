@@ -1,6 +1,6 @@
-# github-scripts
+# Github CLI utils
 
-Scripts to get various info from Github repos. All output is CSV and will be generated under `./output`.
+Utils to get various info from Github repos. All output is CSV and will be generated under `./output`.
 
 Current options include:
 
@@ -11,13 +11,13 @@ Current options include:
 - CSV columns: _id, name, html_url, owner, created_at, updated_at_
 
 ```js
-github-scripts -t <token> -u some-username --repos
+gh-utils -t <token> -u some-username --repos
 ```
 
 or
 
 ```js
-github-scripts -t <token> -o some-orgname --repos
+gh-utils -t <token> -o some-orgname --repos
 ```
 
 ### Get all `package.json` files under a user/org's repositories 
@@ -27,13 +27,13 @@ github-scripts -t <token> -o some-orgname --repos
 - CSV columns: _name, owner, repo, path_
 
 ```js
-github-scripts -t <token> -u some-username --pjson
+gh-utils -t <token> -u some-username --pjson
 ```
 
 or
 
 ```js
-github-scripts -t <token> -u some-orgname --pjson
+gh-utils -t <token> -u some-orgname --pjson
 ```
 
 ### Get specific version information about Node dependencies from `package.json` files for a user/org's repositories
@@ -43,13 +43,13 @@ github-scripts -t <token> -u some-orgname --pjson
 - CSV columns: _repo, path, pkg1_version, pkg2_version, etc._
 
 ```js
-github-scripts -t <token> -u some-username --deps react,styled-components
+gh-utils -t <token> -u some-username --deps react,styled-components
 ```
 
 or 
 
 ```js
-github-scripts -t <token> -o some-orgname --deps react,styled-components
+gh-utils -t <token> -o some-orgname --deps react,styled-components
 ```
 
 ### Get search results for a specific string in a user/org's repos
@@ -59,13 +59,13 @@ github-scripts -t <token> -o some-orgname --deps react,styled-components
 - CSV columns: __search, repo, path, filename, score, url__
 
 ```js
-github-scripts -t <token> -u some-username --search nextjs
+gh-utils -t <token> -u some-username --search nextjs
 ```
 
 or 
 
 ```js
-github-scripts -t <token> -o some-orgname --search nextjs
+gh-utils -t <token> -o some-orgname --search nextjs
 ```
 
 ### Get all issues in a specific user/org's repository
@@ -75,13 +75,13 @@ github-scripts -t <token> -o some-orgname --search nextjs
 - CSV columns: __html_url, title, body, author, comments__
 
 ```js
-github-scripts -t <token> -u some-username --issues
+gh-utils -t <token> -u some-username --issues
 ```
 
 or 
 
 ```js
-github-scripts -t <token> -o some-orgname --issues
+gh-utils -t <token> -o some-orgname --issues
 ```
 
 ### Set up
@@ -95,7 +95,7 @@ github-scripts -t <token> -o some-orgname --issues
 ```
 npm install
 npm link
-github-scripts -t [token] <option>
+gh-utils -t [token] <option>
 ```
 
 or

@@ -1,7 +1,7 @@
 {
-  "name": "github-scripts",
+  "name": "github-cli-utils",
   "version": "1.0.0",
-  "description": "CLI tools to get various info from a user/org's repos on Github.",
+  "description": "CLI utils to get various info from a user/org's repos on Github.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
   "license": "ISC",
   "preferGlobal": true,
   "bin": {
-    "github-scripts": "./index.js"
+    "gh-utils": "./index.js"
   },
   "dependencies": {
     "@octokit/plugin-retry": "^2.2.0",
