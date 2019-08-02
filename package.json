@@ -1,0 +1,24 @@
+{
+  "name": "github-scripts",
+  "version": "1.0.0",
+  "description": "CLI tools to get various info from a user/org's repos on Github.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruxandra Fediuc",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "github-scripts": "./index.js"
+  },
+  "dependencies": {
+    "@octokit/plugin-retry": "^2.2.0",
+    "@octokit/plugin-throttling": "^2.6.0",
+    "@octokit/rest": "^16.27.3",
+    "commander": "^2.17.1",
+    "json2csv": "^4.2.1",
+    "neat-csv": "^5.0.0",
+    "p-map": "^2.1.0"
+  }
+}
