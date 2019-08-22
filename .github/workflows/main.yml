@@ -13,4 +13,4 @@ jobs:
       run: echo Hello, world!
     - uses: ruxandrafed/gh-action-docker@v1.2.0
       with: 
-        name: 'Ruxandra'
+        args: 'whoami'
