@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       run: echo Hello, world!
-    - uses: ruxandrafed/gh-action-docker@v1.0.0
+    - uses: ruxandrafed/gh-action-docker@v1.1.0
