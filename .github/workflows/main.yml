@@ -12,3 +12,5 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - uses: ruxandrafed/gh-action-docker@v1.1.0
+      with: 
+        name: 'Ruxandra'
